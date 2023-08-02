@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Recorder Web App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindScreen | Screen Recorder </title>
 </head>
-<body>
-    <h1>Recorder Web App</h1>
+<body style="display: flex; flex-direction: column; align-items: center;">
+    <h1 style="font-family: sans-serif; text-align: center; font-size: 3rem; max-width: 700px;">A Simple Screen Recorder by <br> <a href="https://soft-simurgh.com" target="_blank" style="color: #DC0067;">Soft Simurgh</a></h1>
     <video id="recordedVideo" controls style="display: none;"></video>
     <canvas id="canvas" style="display: none;"></canvas>
-    <button id="startRecording">Start Recording</button>
-    <button id="stopRecording">Stop Recording</button>
-    <button id="downloadVideo" style="display: none;">Download Video</button>
+    <button id="startRecording" style="width: fit-content; padding: 10px 20px; background: green; outline: none; border: none;font-size: 22px; color: white; cursor: pointer; margin-bottom: 20px;">Start Recording</button>
+    <button id="stopRecording" style="width: fit-content; padding: 10px 20px; background: orange; outline: none; border: none;font-size: 22px; color: white; cursor: pointer; margin-bottom: 20px;">Stop Recording</button>
+    <button id="downloadVideo" style="display: none; width: fit-content; padding: 10px 20px; background:yellowgreen; outline: none; border: none;font-size: 22px; color: white; cursor: pointer; margin-bottom: 20px;">Download Video</button>
     <script src="app.js"></script>
 </body>
 </html>
